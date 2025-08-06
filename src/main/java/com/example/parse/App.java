@@ -64,7 +64,6 @@ public class App {
         List<Number> filtered = Sequence.filterNegativeNumber(number,positive);
         System.out.println("Отфильтрованные числа : " + filtered);
 
-//        Stream<Number> streamNum = Arrays.stream(number);
         List<Number> n = Arrays.stream(number)
                 .filter(x->x.doubleValue()>=0)
                 .peek(System.out::println)
